@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADACE - Asociación</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #0a3d62;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0a3d62;
+      margin-bottom: 1rem;
+    }
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      background: #0a3d62;
+      color: #fff;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    form button:hover {
+      background: #145a8d;
+    }
+    footer {
+      text-align: center;
+      background: #0a3d62;
+      color: #fff;
+      padding: 1rem;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo_4k.png" alt="Logo ADACE" width="120">
+    <h1>ADACE - Asociación de Auxiliares Castrenses y Policiales Extranjeros Acreditados Ante el Gobierno del Perú</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#quienes">Quiénes Somos</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenidos</h2>
+    <p>La Asociación de Auxiliares Castrenses y Policiales Extranjeros Acreditados Ante el Gobierno del Perú (ADACE) les da la más cordial bienvenida a nuestro sitio oficial, espacio de encuentro institucional e integración internacional.</p>
+  </section>
+
+  <section id="quienes">
+    <h2>Quiénes Somos</h2>
+    <p>ADACE reúne a auxiliares y suboficiales militares y policiales acreditados ante el Gobierno del Perú, fomentando la camaradería, el apoyo mutuo y la cooperación institucional. Nuestra misión es mantener viva la tradición, fortalecer los lazos de amistad y contribuir a la proyección internacional de nuestras fuerzas, tal y como lo realizaron nuestros fundadores el 20 de septiembre del año 1972.</p>
+  </section>
+
+  <section id="noticias">
+    <h2>Noticias y Actividades</h2>
+    <div class="news-grid">
+      <div class="card">
+        <p>Conmemoramos con orgullo el aniversario de una institución gloriosa, reafirmando nuestros lazos de fraternidad.</p>
+      </div>
+      <div class="card">
+        <h3>Reunión internacional de agregadurías</h3>
+        <p>Encuentro con asociaciones extranjeras para fortalecer la cooperación institucional.</p>
+      </div>
+      <div class="card">
+        <h3>Actividades sociales</h3>
+        <p>Eventos culturales y protocolares en honor a las fuerzas aliadas y amigas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x250" alt="imagen1.jpeg">
+      <img src="https://via.placeholder.com/400x250" alt="imagen2.jpeg">
+      <img src="https://via.placeholder.com/400x250" alt="imagen3.jpeg">
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formsubmit.co/adace.lima@gmail.com" method="POST">
+      <label>Nombre:</label><br>
+      <input type="text" name="name" required><br><br>
+
+      <label>Correo:</label><br>
+      <input type="email" name="email" required><br><br>
+
+      <label>Mensaje:</label><br>
+      <textarea name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Enviar</button>
+
+      <!-- Opcional: configuraciones ocultas -->
+      <input type="hidden" name="_subject" value="Nuevo mensaje desde la web ADACE">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 ADACE - Todos los derechos reservados</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/adace_2025/" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+</body>
+</html>
